@@ -25,20 +25,25 @@
 }
 
 .sticky #navbarCollapse li > a {
-  @apply text-dark dark:text-white hover:text-primary dark:hover:text-primary hover:opacity-100;
+  @apply text-dark dark:text-white hover:text-red-900 dark:hover:text-primary hover:opacity-100;
 }
+
+.sticky #navbarCollapse li > #active {
+  @apply text-red-900 dark:text-red-600 hover:text-red-900 dark:hover:text-red-900 hover:opacity-100;
+}
+
 #navbarCollapse li .ud-menu-scroll.active {
   @apply opacity-70;
 }
 .sticky #navbarCollapse li .ud-menu-scroll.active {
-  @apply text-primary opacity-100;
+  @apply text-red-900 opacity-100;
 }
 .sticky .loginBtn {
   @apply text-dark dark:text-white hover:text-primary dark:hover:text-primary hover:opacity-100;
 }
 
 .sticky .signUpBtn {
-  @apply bg-primary text-white hover:bg-blue-dark hover:text-white;
+  @apply bg-red-900 text-white hover:bg-red-950 hover:text-white;
 }
 
 .sticky #themeSwitcher ~ span {
