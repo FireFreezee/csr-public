@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./*.html", "./assets/**/*.js"],
+  content: ["./*.html", "./assets/**/*.js", "./node_modules/flowbite/**/*.js"],
   darkMode: "class",
   theme: {
     screens: {
@@ -24,6 +24,15 @@ module.exports = {
     },
     extend: {
       colors: {
+        // custom color
+        primaryRed: '#510300',
+        secondaryRed: '#98100a',
+        dark: '#171d2a',
+
+
+        // https://www.figma.com/design/eH4LIG7U6GK9tsoLDrMPEl/Project-Coding-League-%3A-CSR-Kabupaten-Cirebon?node-id=6119-119816
+        bandiBlue: '#0098B0',
+        BlazeOrange: '#FF6E01',
         black: "#212b36",
         "dark-700": "#090e34b3",
         dark: {
@@ -57,10 +66,16 @@ module.exports = {
         1: "0px 1px 3px 0px rgba(166, 175, 195, 0.40)",
         2: "0px 5px 12px 0px rgba(0, 0, 0, 0.10)",
       },
+      fontFamily: {
+        // font
+        helvetica: ['Helvetica', 'sans-serif'],
+      }
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }

@@ -17,5 +17,8 @@
     "prettier": "^3.1.1",
     "prettier-plugin-tailwindcss": "^0.5.9",
     "tailwindcss": "^3.4.10"
+  },
+  "dependencies": {
+    "flowbite": "^2.5.1"
   }
 }
